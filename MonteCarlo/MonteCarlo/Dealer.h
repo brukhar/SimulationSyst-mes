@@ -1,4 +1,6 @@
-#pragma once
+#ifndef DEALER_H
+#define DEALER_H
+
 #include <list>
 
 class Dealer
@@ -16,3 +18,5 @@ public:
 	*/
 	int DrawNewCard(bool withReplacement);
 };
+
+#endif 

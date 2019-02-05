@@ -5,11 +5,11 @@
 #include <algorithm>
 
 
-Games* Games::instance = nullptr;
+Games* Games::instance = NULL;
 
 Games* Games::Get()
 {
-	if (instance == nullptr)
+	if (instance == NULL)
 		instance = new Games();
 	return instance;
 }
@@ -69,7 +69,7 @@ int Games::Game5()
 
 	for (int i = 0; i < 3; i++)
 	{
-		won = won || ((cards[i] % 13 == cards[i+2] % 13 - 2) && (cards[i]== cards[i+2] - 2));
+		won = won || ((cards[i] % 13 == cards[i+2] % 13 - 2) && (cards[i] == cards[i+2] - 2));
 	}
 
 	return won ? 5 : 0;

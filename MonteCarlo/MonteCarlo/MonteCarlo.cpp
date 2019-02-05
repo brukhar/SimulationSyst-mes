@@ -12,7 +12,7 @@ int main()
 	srand(time(NULL));
 	Dealer deal;
 
-	std::cout << "Calculs en cours, veuillez patienter." << std::endl;
+	std::cout << "Calculs en cours, veuillez patienter...\n" << std::endl;
 
 	int won1 = 0;
 	int won2 = 0;
@@ -33,14 +33,14 @@ int main()
 			won5++;
 
 		if (i % 50000 == 0)
-			std::cout << "\rExecution terminee a " << i / 10000 << "%.";
+			std::cout << "\rExecution terminee a " << i / 10000 << "%";
 	}
-	std::cout << "\r" << std::endl;
-	std::cout << "Jeu 1 : " << won1 << " victoires." << std::endl << "  Probabilite de victoire : " << won1 * 1.0/ 1000000 << "%." << std::endl << "---------------------" << std::endl << std::endl;
-	std::cout << "Jeu 2 : " << won2 << " victoires." << std::endl << "  Probabilite de victoire : " << won2 * 1.0 / 1000000 << "%." << std::endl << "---------------------" << std::endl << std::endl;
-	std::cout << "Jeu 3 : " << won3 << " victoires." << std::endl << "  Probabilite de victoire : " << won3 * 1.0 / 1000000 << "%." << std::endl << "---------------------" << std::endl << std::endl;
-	std::cout << "Jeu 4 : " << won4 << " victoires." << std::endl << "  Probabilite de victoire : " << won4 * 1.0 / 1000000 << "%." << std::endl << "---------------------" << std::endl << std::endl;
-	std::cout << "Jeu 5 : " << won5 << " victoires." << std::endl << "  Probabilite de victoire : " << won5 * 1.0 / 1000000 << "%." << std::endl << "---------------------" << std::endl << std::endl;
+	std::cout << "\r\n" << std::endl;
+	std::cout << "Jeu 1 : " << won1 << " victoires." << std::endl << "  Probabilite de victoire : " << won1 * 1.0/ 1000000 << "%" << std::endl << "---------------------" << std::endl << std::endl;
+	std::cout << "Jeu 2 : " << won2 << " victoires." << std::endl << "  Probabilite de victoire : " << won2 * 1.0 / 1000000 << "%" << std::endl << "---------------------" << std::endl << std::endl;
+	std::cout << "Jeu 3 : " << won3 << " victoires." << std::endl << "  Probabilite de victoire : " << won3 * 1.0 / 1000000 << "%" << std::endl << "---------------------" << std::endl << std::endl;
+	std::cout << "Jeu 4 : " << won4 << " victoires." << std::endl << "  Probabilite de victoire : " << won4 * 1.0 / 1000000 << "%" << std::endl << "---------------------" << std::endl << std::endl;
+	std::cout << "Jeu 5 : " << won5 << " victoires." << std::endl << "  Probabilite de victoire : " << won5 * 1.0 / 1000000 << "%" << std::endl << "---------------------" << std::endl << std::endl;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

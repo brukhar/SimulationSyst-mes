@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GAMES_H
+#define GAMES_H
 class Games
 {
 	//Singleton
@@ -17,3 +18,4 @@ public:
 	int Game5();
 };
 
+#endif 
